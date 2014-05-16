@@ -1,7 +1,7 @@
 {
-  "name": "cpt",
+  "name": "grw",
   "version": "0.0.1",
-  "description": "A template for npm module use coffee script",
+  "description": "A stream wrapper github-releases module",
   "main": "index.js",
   "scripts": {
     "test": "gulp mocha"
@@ -9,7 +9,7 @@
   "keywords": [
     "github",
     "coffee",
-    "bootstrap"
+    "github-releases"
   ],
   "author": "xeodou@gmail.com",
   "license": "MIT",
@@ -20,5 +20,8 @@
     "gulp-util": "^2.2.14",
     "gulp-mocha": "^0.4.1",
     "should": "^3.3.1"
+  },
+  "dependencies": {
+    "github-releases": "^0.2.0"
   }
 }

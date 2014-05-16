@@ -1,34 +1,33 @@
-# CPT
+# grw
 
-> A template for npm module use coffee script
+> A stream wrapper github-releases module [link](https://github.com/atom/node-github-releases).
 
 ## Getting Started
 
-### First
-Install `gulp`.
-If you haven't use `Gulp` , I think you should use it to save your short life.
-To install `gulp` you can have a look at this repo https://github.com/gulpjs/gulp or just use this command:
+Install via `npm`
 
 ```shell
-    npm i -g gulp
-```
-
-### Second
-Clone this repo:
-
-```shell
-    git clone git@github.com:xeodou/CPT.git
+   npm i grw
 ```
 
 ## Usage
 
-### Compile Coffee Script
+```Javascript
+var grw = require('grw');
 
-Use `gulp coffee` transfer coffeescript to javascript.
+grw({
+    repo: 'xeodou/grw',
+    version: 'v0.0.1',
+    prefix: 'grw-{version}-beta',
+    ext: 'zip'
+}).pipe(dist);
+```
 
-### Test
+grw is a readable and writeable stream object.
 
-Use `gulp mocha` to test your code with mocha.
+## Test
+
+Use `gulp mocha` to test the module.
 
 
 
