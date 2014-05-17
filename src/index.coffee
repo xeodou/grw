@@ -22,7 +22,7 @@ module.exports = grw= (options)->
         new Error  "Cannot find #{options.repo} #{options.version} from GitHub" if error
 
         filename = options.prefix + '.' + options.ext
-        filename = filename.replace key, value for key, value in options
+        filename = filename.replace "{#{key}}", value for key, value of options
 
         found = false
         for asset in releases[0].assets when asset.name is filename
