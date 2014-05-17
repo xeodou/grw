@@ -13,6 +13,10 @@
   ],
   "author": "xeodou@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xeodou/grw.git"
+  },
   "devDependencies": {
     "gulp": "^3.6.2",
     "gulp-coffee": "^1.4.3",
